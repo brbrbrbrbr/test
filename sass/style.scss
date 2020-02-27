@@ -199,6 +199,11 @@
   .main-title{
       margin: 0;
       padding-top: 100px;
+      justify-content: center;
+      display: grid;
+      text-align: center;
+      margin: 0.em;
+      max-width: 532px
   }
   .work-item{
       display: grid;
