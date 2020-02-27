@@ -1,53 +1,703 @@
-/*
-Error: Invalid CSS after "      margin: 0": expected ";", was ".em;"
-        on line 205 of C:/Users/admin/test/sass/style.scss
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url(//db.onlinewebfonts.com/c/67cee07cc12b8225235239f124c1ebc5?family=Morebi+Rounded);
+@font-face {
+  font-family: SFPro;
+  src: url("../fonts/SFPro/SFProDisplay-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* line 11, ../sass/style.scss */
+body {
+  color: #FFFFFF;
+  margin: 0;
+}
 
-200:       margin: 0;
-201:       padding-top: 100px;
-202:       justify-content: center;
-203:       display: grid;
-204:       text-align: center;
-205:       margin: 0.em;
-206:       max-width: 532px
-207:   }
-208:   .work-item{
-209:       display: grid;
-210:       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+/* line 15, ../sass/style.scss */
+.common-text, .contact-addresses {
+  line-height: 24px;
+}
 
-Backtrace:
-C:/Users/admin/test/sass/style.scss:205
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1207:in `expected'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1137:in `expected'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1132:in `tok!'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:786:in `block in try_declaration'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1183:in `rethrow'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:791:in `try_declaration'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:720:in `declaration_or_ruleset'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:685:in `block_child'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:666:in `block'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:658:in `ruleset'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:684:in `block_child'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:125:in `stylesheet'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/engine.rb:409:in `_to_tree'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:331:in `block in watch'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"      margin: 0\": expected \";\", was \".em;\"\A         on line 205 of C:/Users/admin/test/sass/style.scss\A \A 200:       margin: 0;\A 201:       padding-top: 100px;\A 202:       justify-content: center;\A 203:       display: grid;\A 204:       text-align: center;\A 205:       margin: 0.em;\A 206:       max-width: 532px\A 207:   }\A 208:   .work-item{\A 209:       display: grid;\A 210:       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));"; }
+/* line 19, ../sass/style.scss */
+textarea {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 23, ../sass/style.scss */
+input textarea {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  color: #999999;
+}
+
+/* line 29, ../sass/style.scss */
+h1 {
+  font-family: 'Morebi Rounded';
+  margin: 0;
+}
+
+/*-----heder-----*/
+/* line 34, ../sass/style.scss */
+header {
+  background-image: url(../pictures/WebsitePic1.jpg);
+  background-size: cover;
+  min-height: 898px;
+}
+
+/* line 39, ../sass/style.scss */
+.logo {
+  z-index: 2;
+  height: 48px;
+  width: 21px;
+  margin-left: 7em;
+  margin-top: 1em;
+}
+
+/* line 46, ../sass/style.scss */
+.hub-btn {
+  width: 230px;
+  height: 63px;
+  border: 1px solid #A2F21E;
+  line-height: 63px;
+  border-radius: 32px;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  font-size: 17px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0.9em 1.1em;
+}
+
+/* line 60, ../sass/style.scss */
+.hub-btn:hover {
+  background-color: #f2f2f2;
+  opacity: 0.5;
+  color: black;
+}
+
+/* line 65, ../sass/style.scss */
+.header-titles {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  padding-top: 14%;
+}
+
+/* line 71, ../sass/style.scss */
+.hubs {
+  display: inherit;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  font-family: SFPro;
+  margin: 2em 0;
+}
+
+/* line 77, ../sass/style.scss */
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+/* line 84, ../sass/style.scss */
+.menu-title {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 40px;
+  right: 120px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* line 96, ../sass/style.scss */
+#menu-toggle {
+  opacity: 0;
+}
+
+/* line 99, ../sass/style.scss */
+#menu-toggle:checked ~ .logo {
+  margin-left: 90%;
+}
+
+/* line 103, ../sass/style.scss */
+#menu-toggle:checked ~ .menu-btn > span {
+  transform: rotate(45deg);
+}
+
+/* line 106, ../sass/style.scss */
+#menu-toggle:checked ~ .menu-btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+/* line 110, ../sass/style.scss */
+#menu-toggle:checked ~ .menu-btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/* line 114, ../sass/style.scss */
+#menu-toggle:checked ~ .menu-box {
+  visibility: visible;
+  left: 0;
+}
+
+/* line 119, ../sass/style.scss */
+.menu-btn {
+  align-items: center;
+  position: fixed;
+  top: 50px;
+  right: 156px;
+  width: 21px;
+  height: 18px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* line 131, ../sass/style.scss */
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #4DE845;
+  transition-duration: .25s;
+}
+
+/* line 144, ../sass/style.scss */
+.menu-btn > span::before {
+  content: '';
+  top: -8px;
+}
+
+/* line 148, ../sass/style.scss */
+.menu-btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+/* line 153, ../sass/style.scss */
+.menu-box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: -10%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 80px 0;
+  list-style: none;
+  background: rgba(21, 21, 21, 0.7);
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition-duration: .25s;
+}
+
+/* line 173, ../sass/style.scss */
+.menu-item {
+  display: block;
+  padding: 12px 24px;
+  color: #FFFF;
+  font-family: 'Morebi Rounded';
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* line 185, ../sass/style.scss */
+.menu__item:hover {
+  color: #4DE845;
+}
+
+/*-----heder-----*/
+/*------our-work-----*/
+/* line 192, ../sass/style.scss */
+.our-work {
+  background: #323234;
+}
+
+/* line 195, ../sass/style.scss */
+.main-title {
+  margin: 0;
+  padding-top: 100px;
+  justify-content: center;
+  display: grid;
+  text-align: center;
+  margin: 0.1em;
+  max-width: 532px;
+}
+
+/* line 204, ../sass/style.scss */
+.work-item {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  margin: 4em 5em;
+}
+
+/* line 209, ../sass/style.scss */
+.work-text {
+  font-family: 'SFPro';
+  font-size: 21px;
+  line-height: 29px;
+  padding: 2em;
+}
+/* line 215, ../sass/style.scss */
+.work-text .green-text {
+  font-family: 'Morebi Rounded';
+  font-size: 27px;
+  line-height: 35px;
+  justify-content: center;
+  margin: 1em;
+}
+
+/* line 225, ../sass/style.scss */
+.main-title h1 {
+  margin: 0.8em;
+}
+
+/* line 229, ../sass/style.scss */
+.common-work-text {
+  max-width: 352px;
+}
+
+/*------our-work-----*/
+/*--------wave--------*/
+/* line 237, ../sass/style.scss */
+svg {
+  width: 100%;
+  display: block;
+}
+
+/* line 242, ../sass/style.scss */
+.bottom-wave svg {
+  position: absolute;
+}
+
+/*--------wave--------*/
+/*------advantages------*/
+/* line 250, ../sass/style.scss */
+.advantages {
+  font-family: 'SFPro';
+  background: #151515;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+  padding: 10% 5%;
+}
+
+/* line 257, ../sass/style.scss */
+.advant-title {
+  font-size: 45px;
+  line-height: 55px;
+}
+/* line 260, ../sass/style.scss */
+.advant-title img {
+  text-decoration: overline;
+}
+
+/* line 264, ../sass/style.scss */
+.advant-text {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+/* line 270, ../sass/style.scss */
+.advant-block {
+  display: inherit;
+  justify-items: center;
+  text-align: center;
+  margin: 30px;
+  word-wrap: break-word;
+}
+
+/*------advantages------*/
+/*-----carusel--------*/
+/* line 282, ../sass/style.scss */
+main-carusel {
+  min-height: 785px;
+}
+/* line 283, ../sass/style.scss */
+main-carusel * {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+/* line 289, ../sass/style.scss */
+.slideshow-container {
+  position: relative;
+}
+
+/* Hide the images by default */
+/* line 294, ../sass/style.scss */
+.mySlides {
+  display: none;
+  margin-bottom: -4px;
+}
+/* line 297, ../sass/style.scss */
+.mySlides img {
+  width: 100%;
+}
+/* line 300, ../sass/style.scss */
+.mySlides .common-text {
+  font-size: 27px;
+  line-height: 38px;
+  margin: 50px;
+}
+
+/* Next & previous buttons */
+/* line 308, ../sass/style.scss */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+/* line 324, ../sass/style.scss */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+/* line 330, ../sass/style.scss */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+/* line 335, ../sass/style.scss */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+}
+/* line 343, ../sass/style.scss */
+.text img {
+  max-width: 79px;
+}
+/* line 346, ../sass/style.scss */
+.text .common-text {
+  font-family: 'SFPro';
+}
+
+/* Number text (1/3 etc) */
+/* line 352, ../sass/style.scss */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+/* line 361, ../sass/style.scss */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* line 371, ../sass/style.scss */
+.dots {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  top: 70%;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 381, ../sass/style.scss */
+.active, .dot:hover {
+  background-color: #61EC3C;
+  width: 20px;
+  border-radius: 5px;
+}
+
+/*-----carusel--------*/
+/*------network-area------*/
+/* line 391, ../sass/style.scss */
+.network-area {
+  background: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+/* line 398, ../sass/style.scss */
+.network-title {
+  font-size: 47px;
+  line-height: 56px;
+  display: block;
+  text-align: left;
+  margin-bottom: 26px;
+}
+
+/* line 405, ../sass/style.scss */
+.net-empty {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.98953) 0%, black 12%, rgba(0, 212, 255, 0) 100%), url(../pictures/riscaldamento-globale-bufala.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 412, ../sass/style.scss */
+.network {
+  padding: 7em 5em;
+  font-family: 'Morebi Rounded';
+}
+/* line 415, ../sass/style.scss */
+.network .common-text {
+  font-family: 'SFPro';
+}
+
+/*------network-area------*/
+/*------contact-------*/
+/* line 424, ../sass/style.scss */
+.contacts {
+  margin: 15%;
+  font-family: "Morebi Rounded";
+}
+/* line 427, ../sass/style.scss */
+.contacts .common-text {
+  font-family: SFPro;
+}
+
+/* line 431, ../sass/style.scss */
+.contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  height: auto;
+  background: #0F1218;
+  color: #FFFFFF;
+  /* зробити загальним */
+  min-height: 803px;
+}
+
+/* line 439, ../sass/style.scss */
+.contact-form {
+  margin: 5em 0;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+}
+
+/* line 446, ../sass/style.scss */
+.contact-form .contact-input {
+  height: 63px;
+}
+
+/* line 449, ../sass/style.scss */
+.contact-input, textarea {
+  background: #323234;
+  color: #ffffff;
+  border-radius: 11px;
+  border: none;
+  margin-top: 18px;
+  width: 90%;
+  padding-left: 25px;
+  outline: none;
+}
+
+/* line 460, ../sass/style.scss */
+.contact-form ::placeholder {
+  text-transform: capitalize;
+}
+
+/* line 463, ../sass/style.scss */
+.contact-form textarea {
+  height: 100px;
+  line-height: 63px;
+}
+
+/* line 467, ../sass/style.scss */
+.contact-addresses {
+  font-size: 17px;
+}
+
+/* line 471, ../sass/style.scss */
+.contact-address {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: row;
+}
+/* line 475, ../sass/style.scss */
+.contact-address img {
+  height: fit-content;
+  margin: 0 5px;
+  border-radius: 10%;
+}
+
+/*------file upload customization--------*/
+/* line 483, ../sass/style.scss */
+.cv-upload {
+  display: flex;
+}
+
+/* line 487, ../sass/style.scss */
+.file-upload {
+  position: relative;
+  overflow: hidden;
+  width: 25px;
+  height: 27px;
+  background-image: url(../pictures/File_icon.svg);
+  text-align: center;
+  margin: 5px;
+}
+
+/* line 497, ../sass/style.scss */
+.file-upload input[type="file"] {
+  display: none;
+}
+
+/* line 500, ../sass/style.scss */
+.file-upload label {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* line 509, ../sass/style.scss */
+.file-upload span {
+  line-height: 36px;
+}
+
+/* line 512, ../sass/style.scss */
+.filename {
+  background: none;
+  border: 0;
+  width: 285px;
+  height: 35px;
+  font-family: 'SFPro';
+  font-size: 17px;
+  line-height: 22px;
+  color: #FFFFFF;
+  padding: 5px;
+}
+
+/* line 523, ../sass/style.scss */
+button[type="submit"] {
+  width: 257px;
+  height: 63px;
+  background: linear-gradient(112.05deg, #A2F71E -31.66%, #3DE74C 70.81%);
+  border: none;
+  border-radius: 31.5px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 22px;
+  outline: none;
+}
+
+/* line 535, ../sass/style.scss */
+.sub-btn:hover {
+  background-color: #f2f2f2;
+  opacity: 0.5;
+  color: black;
+}
+
+/*------contact-------*/
+/*------footer-------*/
+/* line 545, ../sass/style.scss */
+footer {
+  background: #000000;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  justify-items: center;
+  padding: 5% 10%;
+  font-family: 'Muli';
+}
+
+/* line 553, ../sass/style.scss */
+.about-us {
+  display: inherit;
+}
+/* line 555, ../sass/style.scss */
+.about-us .about-title {
+  color: #323234;
+  font-size: 17px;
+  line-height: 22px;
+  margin: 15px 0;
+}
+
+/* line 562, ../sass/style.scss */
+.about-links {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 13px;
+  line-height: 17px;
+  margin: 4px 0;
+}
+
+/* line 569, ../sass/style.scss */
+.about-links:hover {
+  color: gray;
+}
+
+/*------footer-------*/
+/* line 575, ../sass/style.scss */
+h1 {
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  font-size: 47px;
+  line-height: 56px;
+}
+
+/* line 582, ../sass/style.scss */
+h2 {
+  font-family: 'SFPro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 27px;
+  text-align: center;
+  margin: 2em;
+}
+
+/* line 590, ../sass/style.scss */
+.green-text {
+  color: #61EC3C;
+}
+
+/* line 593, ../sass/style.scss */
+.common-text {
+  font-size: 17px;
+  margin: 10px;
+}

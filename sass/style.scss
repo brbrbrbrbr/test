@@ -70,7 +70,7 @@
   }
   .hubs{
       display: inherit;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
       font-family: SFPro;
       margin: 2em 0;
   }
@@ -85,12 +85,10 @@
     display: flex;
     align-items: center;
     position: fixed;
-    top: 20px;
-    right: 60px;
-
+    top: 40px;
+    right: 120px;
     width: 26px;
     height: 26px;
-  
     cursor: pointer;
     z-index: 1;
   }
@@ -175,16 +173,14 @@
     .menu-item {
       display: block;
       padding: 12px 24px;
-    
       color: #FFFF;
-    
       font-family: 'Morebi Rounded';
       font-size: 20px;
       font-weight: 600;
     
       text-decoration: none;
     
-      transition-duration: .25s;
+      // transition-duration: .1s;
     }
     .menu__item:hover {
       color: #4DE845;
@@ -202,7 +198,7 @@
       justify-content: center;
       display: grid;
       text-align: center;
-      margin: 0.em;
+      margin: 0.1em;
       max-width: 532px
   }
   .work-item{
@@ -229,6 +225,9 @@
     h1{
       margin: 0.8em;
     }
+  }
+  .common-work-text{
+    max-width: 352px;
   }
  
   
@@ -484,6 +483,7 @@
   .cv-upload{
       display: flex;
   }
+
   .file-upload {
       position: relative; 
       overflow: hidden; 
@@ -531,6 +531,11 @@
       font-size: 17px;
       line-height: 22px;
       outline: none;
+  }
+  .sub-btn:hover{
+    background-color: #f2f2f2;
+    opacity:0.5;
+    color: black;
   }
 
   /*------contact-------*/
