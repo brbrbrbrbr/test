@@ -40,8 +40,8 @@
       z-index: 2;
       height: 48px;
       width: 21px;
-      margin-left: 100%;
-      margin-top: 50%;
+      margin-left: 7em;
+      margin-top: 1em;
   }
   .hub-btn{
       width: 230px;
@@ -55,7 +55,7 @@
       font-size: 17px;
       text-align: center;
       color: #FFFFFF;
-      margin: auto;
+      margin: 0.9em 1.1em;
   }
   .hub-btn:hover{
       background-color: #f2f2f2;
@@ -66,7 +66,7 @@
       display: grid;
       grid-template-rows: 1fr 1fr;
       justify-content: center;
-      padding-top: 15%;
+      padding-top: 14%;
   }
   .hubs{
       display: inherit;
@@ -119,14 +119,12 @@
     }
     
     .menu-btn {
-      display: flex;
       align-items: center;
       position: fixed;
-      top: 20px;
-      right: 100px;
-  
-      width: 26px;
-      height: 26px;
+      top: 50px;
+      right: 156px;
+      width: 21px;
+      height: 18px;
     
       cursor: pointer;
       z-index: 1;
@@ -221,6 +219,11 @@
           margin: 1em;
       }
       
+  }
+  .main-title{
+    h1{
+      margin: 0.8em;
+    }
   }
  
   
