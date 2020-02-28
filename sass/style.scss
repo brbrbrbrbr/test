@@ -1,13 +1,21 @@
 
   @font-face {
     font-family: SFPro;
-    src: url("../fonts/SFPro/SFProDisplay-Regular.ttf") format("truetype");
+    src: url("../fonts/SFPro/SFProDisplay-Ultralight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+  }
+  @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+  @font-face {
+    font-family: "Morebi Rounded";
+    src: url("../fonts/MorebiRoundedBlack/MorebiRounded-Regular.otf") format("openType");
     font-style: normal;
     font-weight: normal;
   }
-  @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-  
-  @import url(//db.onlinewebfonts.com/c/67cee07cc12b8225235239f124c1ebc5?family=Morebi+Rounded);
+
+  //@import url(//db.onlinewebfonts.com/c/67cee07cc12b8225235239f124c1ebc5?family=Morebi+Rounded);
+
   body{
       color: #FFFFFF;
       margin: 0;
@@ -72,7 +80,7 @@
       display: inherit;
       grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
       font-family: SFPro;
-      margin: 2em 0;
+      margin: 1.5em 0;
   }
   nav{
       position: fixed;
@@ -198,13 +206,15 @@
       justify-content: center;
       display: grid;
       text-align: center;
-      margin: 0.1em;
-      max-width: 532px
+      //max-width: 532px
   }
   .work-item{
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      margin: 4em 5em;
+      margin: 3.2em 7.5em 0;
+  }
+  .work-presentation{
+    margin: 5em 0;
   }
   .work-text{
       font-family: 'SFPro';
@@ -217,17 +227,50 @@
           font-size: 27px;
           line-height: 35px;
           justify-content: center;
-          margin: 1em;
       }
       
   }
   .main-title{
     h1{
-      margin: 0.8em;
+      margin: 0.9em 0 0.1em 0;
     }
   }
   .common-work-text{
     max-width: 352px;
+  }
+  .subtitle{
+    max-width: 500px;
+    margin: 0.8em;
+  }
+  .odd {
+    .work-text{
+      padding: 1.6em 5.4em;
+    }
+    .common-work-text{
+      margin-top: 1.8em;
+    }
+    .green-text{
+      margin: 1em 0;
+    }
+  }
+  .paired{
+    margin: 3.3em 7.5em 0.2em;
+    .work-text{
+      //margin: 3.3em 7.5em 0;
+      margin: 1em 0.5em 0;
+      .common-work-text{
+        margin: 1.86em 1.8em;
+      }
+      .green-text{
+        margin: 0.01em 1.4em;
+      }
+    }
+    .work-pic{
+      padding: 0 1em;
+    }
+    //.work-pic{
+    //
+    //}
   }
  
   
@@ -252,11 +295,15 @@
       background: #151515;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
-      padding: 10% 5%;
+      padding: 1em 6em 4.6em;;
   }
   .advant-title{
+      font-family: "SFPro Display" ;
+      font-style: normal;
+      font-weight: bold;
       font-size: 45px;
       line-height: 55px;
+      margin-top:16px;
       img{
           text-decoration: overline;
       }
@@ -271,9 +318,11 @@
       display: inherit;
       justify-items: center;
       text-align: center;
-    //   max-width: 352px;
-      margin: 30px;
+      margin: 2.9em 0;
       word-wrap: break-word;
+    img{
+
+    }
   }
   /*------advantages------*/
   
@@ -288,6 +337,8 @@
   /* Slideshow container */
   .slideshow-container {
     position: relative;
+    padding-top: 3.9em;
+    background-color: #151515;
   }
   
   /* Hide the images by default */
@@ -300,7 +351,7 @@
     .common-text{
       font-size: 27px;
       line-height: 38px;
-      margin: 50px;
+      margin: 2.6em 0;;
     }
   }
   
@@ -383,6 +434,9 @@
     width: 20px;
     border-radius: 5px;
   }
+  .carusel-title{
+    padding: 1.7em 14em;
+  }
   
   
   /*-----carusel--------*/
@@ -408,9 +462,10 @@
       background-size: cover;
       position: relative;
       z-index: 1;
+      grid-column: 2/7;
   }
   .network {
-      padding: 7em 5em;
+    padding: 14.3em 0 14.3em 5em;
       font-family: 'Morebi Rounded';
       .common-text{
           font-family: 'SFPro';
@@ -422,11 +477,19 @@
   
   /*------contact-------*/
   .contacts{
-      margin: 15%;
+      margin: 11.7em 6.9em 8em;
       font-family: 'Morebi Rounded' ;
       .common-text{
           font-family: SFPro;
+          font-weight: 600;
+          margin: 1em 0 0 0.15em;
       }
+  }
+  .contact-title, .contact-addresses{
+    padding: 0 0.1em;
+  }
+  .tel-number{
+    margin: 0 2.6em;
   }
   .contact{
       display: grid;
@@ -436,8 +499,14 @@
       color: #FFFFFF;         /* зробити загальним */
       min-height: 803px;
   }
+  .contact-title{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 47px;
+      line-height: 56px;
+  }
   .contact-form{
-      margin: 5em 0;
+      margin: 7.2em 0;
       padding: 1em;
       display: flex;
       flex-direction: column;
@@ -455,10 +524,13 @@
       width: 90%;
       padding-left: 25px;
       outline: none;
+      max-width: 520px;
   }
 
   .contact-form  ::placeholder{
       text-transform: capitalize;
+      font-size: 17px;
+      padding: 1em 0.9em;
   }
   .contact-form textarea{
       height: 100px;
@@ -466,15 +538,21 @@
   }
   .contact-addresses{
       font-size: 17px;
+      margin: 0.7em 0;
+      .green-text{
+        margin: 2.5em 0 0;
+      }
+  }
+  .contact-mail{
+    margin: 0.6em 2.6em;
   }
   
   .contact-address{
-      margin-top: 18px;
       display: flex;
       flex-direction: row;
+      margin: 2.3em 0 0 0.2em;
       img{
           height: fit-content;
-          margin: 0 5px;
           border-radius: 10%;
       }
   }
@@ -482,6 +560,7 @@
   /*------file upload customization--------*/
   .cv-upload{
       display: flex;
+      margin: 0.8em 0.4em;
   }
 
   .file-upload {
@@ -531,6 +610,7 @@
       font-size: 17px;
       line-height: 22px;
       outline: none;
+      margin: 0.55em 0.04em;
   }
   .sub-btn:hover{
     background-color: #f2f2f2;
@@ -547,7 +627,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
       justify-items: center;
-      padding: 5% 10%;
+      padding: 3.7em 20.4em 5em;
       font-family: 'Muli';
   }
   .about-us{
@@ -586,6 +666,7 @@
       font-size: 27px;
       text-align: center;
       margin: 2em;
+      line-height: 140%;
   }
   .green-text{
       color: #61EC3C;
