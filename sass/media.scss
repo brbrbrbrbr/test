@@ -105,7 +105,7 @@
       width: 500px;
     }
     header{
-      min-height: 898px;
+      max-height: 898px;
     }
     .advantages{
       padding: 0;
@@ -114,7 +114,7 @@
   @media (max-width: 675px) {
     .paired{
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
       .work-text{
         order: 2;
       }
@@ -126,10 +126,11 @@
       }
     }
     .odd{
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
       img{
         width: 100%;
       }
+    
     }
     .work-item{
       margin-left: auto;
@@ -137,13 +138,18 @@
       text-align: center
     }
     .work-text{
+      padding: 0;
+      text-align: left;
+      // max-width: 300px;
+      // min-width: 280px;
+      width: 300px;
       .green-text{
         font-size: 27px;
         line-height: 140%;
       }
     }
     .odd .work-text{
-      padding: 0;
+      padding: 0 1.5em;
     }
     .contact-form{
       padding: 0;
@@ -156,6 +162,27 @@
     }
     .network{
       padding: 7.3em 3em;
+    }
+    .main-title{
+      line-height: 110%;
+    }
+    .hubs{
+      margin: 0.1em 1em;
+      max-height: 80px;
+    }
+    header{
+      max-height: 580px;
+    }
+    .main-title {
+      margin: 0;
+      padding-top: 1.6em;
+    }
+    .contact-title{
+      margin: 1.3em 0.1em 0;
+    }
+    .contact-adresses{
+      margin: 1.5em 0 0 0.3em;
+      font-size: 14px;
     }
   }
   @media (max-width: 420px){
@@ -173,11 +200,25 @@
     .text{
       h1{
         font-size: 30px;
+        line-height: 100%;
       }
       .common-text{
         font-size: 20px;
       }
     }
+    .contact-form{
+      width: 400px;
+    }
+    .logo{
+      margin-left: 2em;
+    }
+    .menu-btn{
+      right: 75px;
+    }
+    .menu-title {
+      right: 45px;
+    }
+
   }
   
   @media (max-width: 355px){
@@ -192,6 +233,8 @@
     }
     .contact-form{
       padding: 0;
+      margin: 1em;
+      width: 310px;
     }
     footer{
       padding: 3.7em 1em 5em;
